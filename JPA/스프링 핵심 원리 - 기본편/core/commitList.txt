@@ -1,0 +1,33 @@
+
+<commitList>
+
+1. 기본세팅(member 도메인)
+    - 오로지 자바로만 설계를 하되, 스프링 부트는 편의상 사용한다.
+    - start.spring.io를 통해서 생성 -> 의존성(Dependency) 선택 X
+    - Application을 통해서 실행(run)이 되는지 확인
+    - 비지니스 요구사항을 참고하여 member 도메인부터 설계
+    - DB를 선택하지 않아서 메모리 저장소 사용(휘발성 데이터 저장소)
+         - private static Map<Long, Member> store = new HashMap<>();
+         - 저장 : store.put(key, value)
+         - 찾기 : store.get(key)
+         - 동시성 이슈가 발생할 수 있으므로 ConcurrentHashMap을 사용하자(ConcurrentHashMap이 뭔지 공부 필요)
+         - Service 인터페이스에서는 public을 안 쓴다.(왜? 공부 필요)
+    - 클래스 다이어그램 <-> 객체 다이어그램(두 다이어그램의 차이점 공부 필요)
+    - Grade.VIP = Enum클래스의 Grade 타입의 VIP를 의미
+    - Junit
+        - given, when, then(이 안에 들어갈 에 들어갈 내용들 공부 필요)
+        -  Assertions.assertThat(member).isEqualTo(findMember); => 유닛 테스트
+        - 이 코드의 설계상 문제점은 무엇일까요?
+            - 다른 저장소로 변경할 때 OCP 원칙을 잘 준수할까요?
+            - DIP를 잘 지키고 있을까요?
+            - 의존관계가 인터페이스 뿐만 아니라 구현까지 모두 의존하는 문제점이 있음
+
+1-1) 깃 에러
+    - git init 살패-> Reinitialized existing Git repository in /Users/john_park/Desktop/스프링 핵심 원리 기본편/home/.git/
+    => git init이 이미 다 된 상태, 이 후 git remote부터 진행
+    - git remote add origin https://github.com/JohnPrk/Spring_Core_Basic.git
+    - git add . -> error: 'study/' does not have a commit checked out
+    => 브랜치가 없었음 -> git branch -M main(-M의 의미를 모르겠음)
+
+2. 주문 및 할인 세팅
+    - Junit 코드만 잘 이해하고 외우면 됨(given, when, then) => 뭘 테스트를 할지를 분명하게 하자!
