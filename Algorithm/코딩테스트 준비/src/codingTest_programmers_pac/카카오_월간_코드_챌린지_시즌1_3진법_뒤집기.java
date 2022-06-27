@@ -9,9 +9,7 @@ public class 카카오_월간_코드_챌린지_시즌1_3진법_뒤집기 {
         ArrayList<Integer> list = new ArrayList<>();
         
         
-        while() {
-        	
-        }
+        
         
         return answer;
     }
