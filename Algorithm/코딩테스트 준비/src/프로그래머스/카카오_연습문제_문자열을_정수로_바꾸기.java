@@ -1,4 +1,4 @@
-package codingTest_programmers_pac;
+package 프로그래머스;
 
 public class 카카오_연습문제_문자열을_정수로_바꾸기 {
 	public int solution(String s) {

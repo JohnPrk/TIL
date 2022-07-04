@@ -1,4 +1,4 @@
-package codingTest_programmers_pac;
+package 프로그래머스;
 
 public class 카카오_월간_코드_챌린지_시즌2_약수의_개수와_덧셈 {
 	

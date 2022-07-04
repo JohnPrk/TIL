@@ -1,11 +1,11 @@
-package codingTest_programmers_pac;
+package 프로그래머스;
 
 import java.util.HashSet;
 import java.util.HashMap;
 import java.util.ArrayList;
 
 
-class KAKAO_BLIND_RECRUITMENT_신고_결과_받기 {
+class KAKAO_BLIND_RECRUITMENT_신규_아이디_찾기 {
     public int[] solution(String[] id_list, String[] report, int k) {
         int[] answer = new int[id_list.length];
 
@@ -51,4 +51,5 @@ class KAKAO_BLIND_RECRUITMENT_신고_결과_받기 {
 
         return answer;
     }
+ 
 }

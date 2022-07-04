@@ -1,4 +1,4 @@
-package codingTest_programmers_pac;
+package 프로그래머스;
 
 import java.util.HashSet;
 import java.util.HashMap;
