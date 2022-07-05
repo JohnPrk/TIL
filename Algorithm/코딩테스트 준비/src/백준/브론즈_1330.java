@@ -24,8 +24,6 @@ public class 브론즈_1330 {
 		
 		compare(Integer.parseInt(str_arr[0]), Integer.parseInt(str_arr[1]));
 		
-		
-		
-		
+			
 	}
 }
