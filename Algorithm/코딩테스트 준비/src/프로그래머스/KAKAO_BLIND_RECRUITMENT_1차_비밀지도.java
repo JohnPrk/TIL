@@ -5,59 +5,63 @@ import java.util.*;
 public class KAKAO_BLIND_RECRUITMENT_1차_비밀지도 {
 
 	
-	public static ArrayList<Integer> plus(ArrayList<Integer> lst1, ArrayList<Integer> lst2) {
-		ArrayList<Integer> answer = new ArrayList<>();
+	public static String plus(ArrayList<Integer> lst1, ArrayList<Integer> lst2) {
+		ArrayList<String> answer_arr = new ArrayList<>();
+		String answer = "";
 		
-		System.out.println(lst2.toString());
 		
 		for(int i = 0; i < lst1.size(); i++) {
-			answer.add(lst1.get(i) + lst2.get(i));
+			answer_arr.add(Integer.toString(lst1.get(i) + lst2.get(i)));
+			
+			if(answer_arr.get(i).equals("2")) {
+				answer_arr.set(i, "#"); 
+			}else if(answer_arr.get(i).equals("1")) {
+				answer_arr.set(i, "#");
+			}else {
+				answer_arr.set(i, " ");
+			}
 		}
-		
-//		System.out.println(answer.toString());
+		for(String ans : answer_arr) {
+			answer += ans;
+		}
 		
 		return answer;
 	}
-	public static ArrayList<Integer> notation(int i) {
+	public static ArrayList<Integer> notation(int i, int n) {
        
 		ArrayList<Integer> list = new ArrayList<>();
 		
-		if(i < 2) {
-			list.add(0);
-			list.add(0);
-			list.add(0);
-			list.add(0);
-		}else if(i < 4) {
-			list.add(0);
-			list.add(0);
-			list.add(0);
-		}else if(i < 8) {
-			list.add(0);
-			list.add(0);
-		}else if(i < 16) {
-			list.add(0);
+		int wh_i = i;
+		while(wh_i > 0) {
+			list.add(wh_i % 2);
+			wh_i /= 2;
 		}
+        while(list.size() != n) {
+            list.add(0);            
+        }
 		
-		while(i > 0) {
-    	   list.add(i % 2);
-    	   i /= 2;
-		}
-			
+        
+		Collections.reverse(list);
 
 		return list;
     }
     
     public static String[] xor(int n, int[] arr1, int[] arr2) {
         
-        String[] answer = new String[5];
+        String[] answer = new String[n];
         
+        int cnt = -1;
+        // System.out.println(notation(arr1[0]));  
         for(int i =0; i < arr1.length ; i++) {
-        	ArrayList<Integer> lst1 = notation(arr1[i]);
-        	ArrayList<Integer> lst2 = notation(arr2[i]);
+        	
+        	ArrayList<Integer> lst1 = notation(arr1[i], n);
+        	ArrayList<Integer> lst2 = notation(arr2[i], n);
             
-        	plus(lst1, lst2);
+        	cnt++;
+            // System.out.println(lst1.size());
+        	
+            answer[cnt] = plus(lst1, lst2);
         }
-        
         
         
         return answer;
@@ -65,23 +69,8 @@ public class KAKAO_BLIND_RECRUITMENT_1차_비밀지도 {
     
     public String[] solution(int n, int[] arr1, int[] arr2) {
         
-    	
-        
         String[] answer = xor(n, arr1, arr2);
         
         return answer;
-    }
-    
-    public static void main(String[] args) {
-    	
-    	KAKAO_BLIND_RECRUITMENT_1차_비밀지도 m = new KAKAO_BLIND_RECRUITMENT_1차_비밀지도();
-    	
-    	int n = 5;
-        int[] arr1 = new int[] {9, 20, 28, 18, 11};
-        int[] arr2 = new int[] {30, 1, 21, 17, 28};
-        
-    	m.solution(n, arr1, arr2);
-    
-        
     }
 }
