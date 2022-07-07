@@ -1,2 +1,0 @@
-module codingTest_programmers {
-}
