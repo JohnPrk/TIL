@@ -2,7 +2,7 @@ package 백준;
 
 import java.util. *;
 
-public class 골드_DFS_1759 {
+public class DFS_골드_1759 {
 	
 	static int cnt;
 	static int str_cnt;
@@ -60,7 +60,7 @@ public class 골드_DFS_1759 {
 	
 	public static void main(String[] args) {
 		
-		골드_DFS_1759 T = new 골드_DFS_1759();
+		DFS_골드_1759 T = new DFS_골드_1759();
 		
 		Scanner scn = new Scanner(System.in);
 	
