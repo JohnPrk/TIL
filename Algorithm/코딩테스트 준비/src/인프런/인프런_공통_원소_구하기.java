@@ -12,7 +12,7 @@ public class 인프런_공통_원소_구하기 {
 		ArrayList<String> list1 = new ArrayList<>();
 		ArrayList<String> list2 = new ArrayList<>();
 		ArrayList<Integer> union = new ArrayList<>();
-		String answer = ""; 
+		String answer = ""; 	
 		
 		int num = scn.nextInt();
 		
