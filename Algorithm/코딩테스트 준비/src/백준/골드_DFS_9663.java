@@ -5,57 +5,58 @@ import java.util.*;
 public class 골드_DFS_9663 {
 
 	static int cnt;
-	static int[][] board;
-	static int[] dx = {1,1,0,-1,-1,-1,0,1};
-	static int[] dy = {0,-1,-1,-1,0,1,1,1};
-	static int max = Integer.MIN_VALUE;
 	
-	public void DFS(int x, int y) {
+	public boolean Possibility(int D, int[] position) {
+		
+		for(int i=0; i < D; i++) {
+			if(position[D] == position[i]) {
+				return false;
+			}
+			
+			if(Math.abs(D- i) == Math.abs(position[D] - position[i])) {
+				return false;
+			}
+		}
+		
+		return true;
+	}
 	
-		if(board[x][y] == 1) {
+	public void DFS(int D, int num, int[] position) {
+		
+		if(D == num) {
+			cnt++;
 			return;
 		}
 		
-		board[x][y] = 1;
-		
-		for(int i=0; i < dx.length; i++) {
+		for(int i=0; i < num; i++) {
 			
-			int nx = x + dx[i];
-			int ny = y + dy[i];
-		
-			if(nx >= 0 && nx < cnt && ny >= 0 && ny < cnt) {
-				if(board[nx][ny] ==0) {
-					DFS(nx, ny);
-				}
+			position[D] = i;
+			
+			if(Possibility(D, position)) {
+				
+				DFS(D+1, num, position);
 			}
 		}
-		
 		
 	}
 	
-	
-	public void solution() {
+	public void solution(int num, int[] position) {
 		
-		board = new int[cnt][cnt];
 		
-		for(int i=0; i < board.length; i++) {
-			for(int j=0; j < board[0].length; j++) {
-				
-				DFS(i, j);
-			}
-		}
+		DFS(0, num, position);
 	}
 	
 	public static void main(String[] args) {
 		
 		골드_DFS_9663 T = new 골드_DFS_9663();
-		
-		
 		Scanner scn = new Scanner(System.in);
 		
-		cnt = scn.nextInt();
+		int num = scn.nextInt();
+		int[] position = new int[num]; 
 		
 		
-		T.solution();
+		T.solution(num, position);
+		System.out.println(cnt);
+		
 	}
 }
