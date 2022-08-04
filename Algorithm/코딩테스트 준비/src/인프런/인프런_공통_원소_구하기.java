@@ -19,7 +19,7 @@ public class 인프런_공통_원소_구하기 {
 				p2++;
 			}else if(num1_arr[p1] > num2_arr[p2]) {
 				p2++;
-			}else if(num1_arr[p1] > num2_arr[p2]) {
+			}else if(num1_arr[p1] < num2_arr[p2]) {
 				p1++;
 			}
 		}
@@ -48,7 +48,7 @@ public class 인프런_공통_원소_구하기 {
 		
 		
 		String answer = T.solution(num1_arr, num2_arr);
-		answer = answer.strip();
+		answer = answer.trim();
 		System.out.println(answer);
 	}
 }
