@@ -2,55 +2,43 @@ package 인프런;
 
 import java.util.*;
 
-class Point2 implements Comparable<Point2> {
-
-	int x, y;
-
-	Point2(int x, int y) {
-
-		this.x = x;
-		this.y = y;
-	}
-
-	@Override
-	public int compareTo(Point2 o) {
-
-		if (this.x == o.x) {
-			return o.y - this.y;
-		} else {
-			return o.x - this.x;
-		}
-	}
-}
 
 public class 인프런_씨름_선수 {
-
+	
+	static int max = Integer.MIN_VALUE;
+	
 	public static void main(String[] args) {
 
 		Scanner scn = new Scanner(System.in);
-		ArrayList<Point2> list = new ArrayList<>();
-		int max = Integer.MIN_VALUE;
-		int answer = 0;
-
+		int cnt = 0;
 		int num = scn.nextInt();
-
-		for (int i = 0; i < num; i++) {
-
-			int x = scn.nextInt();
-			int y = scn.nextInt();
-
-			list.add(new Point2(x, y));
-		}
-
-		Collections.sort(list);
+		String[] str_array = new String[num];
 		
-		for (Point2 p : list) {
-			if (max < p.y) {
-				answer++;
-				max = p.y;
+		for(int i=0; i < num; i++) {
+			str_array[i] = scn.nextInt() + " " + scn.nextInt();
+			
+			
+		}
+		Arrays.sort(str_array, new Comparator<String>() {
+			@Override
+			public int compare(String o1, String o2) {
+				
+				String h1 = o1.split(" ")[0];
+				String h2 = o2.split(" ")[0];
+				
+				int result = h2.compareTo(h1);
+						
+				return result;
+				
+			}
+		});
+		
+		for(String s : str_array) {
+			if(max < Integer.parseInt(s.split(" ")[1])) {
+				max = Integer.parseInt(s.split(" ")[1]);
+				cnt ++;
 			}
 		}
-
-		System.out.println(answer);
+		System.out.println(cnt);
 	}
 }
