@@ -24,11 +24,10 @@
 ### 인프라
 <details>
   <summary> [인프라 공방 7기] 👨🏻‍💻 그럴듯한 인프라 만들기 - 1주차 </summary>
-    
+    [소수 찾기](https://www.acmicpc.net/problem/1978)
+    [좌충우돌 삽질 여행기 1주차 챌린지] (https://resumejohnpark.notion.site/1-8d2cde479c4d4636ac6cb2b65805fc0e).
+    [주소에 대한 설명](http://www.google.co.kr).
     - 미션 수행 사이클
-![미션 수행 사이클](https://user-images.githubusercontent.com/88137420/185760753-a8f9272b-d8ed-48aa-b055-0e7e497642d2.jpeg)
-
-
     - AWS
       - Virtual Private Cloud
         - VPC
@@ -40,11 +39,8 @@
       - 보안
         - 보안 그룹
       - pem key
-
     - Filezilla
-
     - Docker
-
     - NGINX
       - reverse proxy
         - 포트 포워딩
@@ -52,7 +48,6 @@
         - TLS
         - 캐싱 처리(아직)
         - 로드 밸런싱(아직)
-        
     - ShellScript
 </details>
 <details>
