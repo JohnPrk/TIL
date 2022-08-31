@@ -24,9 +24,8 @@
 ### 인프라
 <details>
   <summary> [인프라 공방 7기] 👨🏻‍💻 그럴듯한 인프라 만들기 - 1주차 </summary>
-    [소수 찾기](https://www.acmicpc.net/problem/1978)
-    [좌충우돌 삽질 여행기 1주차 챌린지] (https://resumejohnpark.notion.site/1-8d2cde479c4d4636ac6cb2b65805fc0e).
-    [주소에 대한 설명](http://www.google.co.kr).
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[좌충우돌 삽질 여행기 1주차 챌린지] : https://resumejohnpark.notion.site/1-8d2cde479c4d4636ac6cb2b65805fc0e
+    
     - 미션 수행 사이클
     - AWS
       - Virtual Private Cloud
