@@ -26,8 +26,7 @@ public class 구현_실버_7568 {
 			}
 			answer += rank + " ";
 		}
-
-		answer = answer.strip();
+		answer = answer.trim();
 		System.out.println(answer);
 	}
 }
