@@ -3,58 +3,37 @@ package 인프런;
 import java.util.*;
 
 public class 인프런_임시반장_정하기 {
-
-	static int cnt;
-	static int[][] board;
-	static int answer;
-	static int max = Integer.MIN_VALUE;
-	
-	
-	
-	public void solution() {
-		
-		for(int i=0; i < cnt; i++) {
-			
-			int tmp = 0;
-			for(int j=0; j < cnt; j++) {
-				
-				
-				for(int k =0; k < 5; k++) {
-					System.out.println(board[i][k] + " ");	
-//					if(board[i][k] == board[j][k]) {
-//						tmp++;
-//						break;
-//					}	
-				}
-				
-			}
-			if(tmp > max) {
-				max = tmp;
-				answer = i + 1;
-			}	
-		}
-	}
 	
 	public static void main(String[] args ) {
-		
-		인프런_임시반장_정하기 T = new 인프런_임시반장_정하기();
-		
 		Scanner scn = new Scanner(System.in);
+		int answer = 0;
+		int max = Integer.MIN_VALUE;
+		int num = scn.nextInt();
+		int[][] board = new int[num+1][6];
 		
-		cnt = scn.nextInt();
-		board = new int[cnt][cnt];
-		
-		
-		for(int i=0; i<cnt; i++) {
-			for(int j=0; j<cnt; j++) {
+		for(int i=1; i<=num; i++) {
+			for(int j=1; j< 6; j++) {
 				board[i][j] = scn.nextInt();
 			}
 		}
-		
-		
-		T.solution();
-		
+		HashMap<Integer, Integer> hash = new HashMap<>();
+		for(int i = 1; i <= num; i++) {
+			for(int j=1; j <= num; j++) {
+				for(int k=1; k < 6; k++) {
+					if(board[i][k] == board[j][k]) {
+						hash.put(i, hash.getOrDefault(i, 0)+1);
+						break;
+					}
+				}
+			}
+		}
+//		System.out.println(hash);
+		for(int key : hash.keySet()) {
+			if(max < hash.get(key)) {
+				max = hash.get(key);
+				answer = key;
+			}
+		}
 		System.out.println(answer);
-	
 	}
 }
