@@ -18,8 +18,6 @@ public class 인프런_아나그램_찾기 {
 		for(int i= p1; i < p2; i++) {
 			str_hash.put(String.valueOf(str.charAt(i)), str_hash.getOrDefault(String.valueOf(str.charAt(i)), 0) +1);
 		}
-		
-		
 		while(p2 < str.length()) {
 			str_hash.put(String.valueOf(str.charAt(p2)), str_hash.getOrDefault(String.valueOf(str.charAt(p2)), 0) +1);
 			
