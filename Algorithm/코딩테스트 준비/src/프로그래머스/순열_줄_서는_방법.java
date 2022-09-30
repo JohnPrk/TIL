@@ -1,38 +1,39 @@
 package 프로그래머스;
 import java.util.*;
 public class 순열_줄_서는_방법 {
-	static int count;
-	static int[] answer;
-	static void perm(int[] arr, int[] output, boolean[] visited, int depth, int n, int r, long end_point) {
-        if (depth == r) {
-            if(count++ == end_point) {
-            	for(int i =0; i < output.length; i++) answer[i] = output[i];
-            }
-            return;
-        }
-
-        for (int i = 0; i < n; i++) {
-            if (visited[i] != true) {
-                visited[i] = true;
-                output[depth] = arr[i];
-                perm(arr, output, visited, depth + 1, n, r, end_point);
-                visited[i] = false;
-            }
-        }
-    }
+	static boolean[] visited;
+	static ArrayList<int[]> list;
+	public static void permutation(int depth, int[] array, int n, int r, int k) {
+		if(depth == r) {
+			int[] tmp = new int[n];
+			for(int i=0; i < tmp.length; i++) tmp[i] = array[i];
+			list.add(tmp);
+			return;
+		}
+		for(int i=1; i <= n; i++) {
+			if(!visited[i]) {
+				visited[i] = true;
+				array[depth] = i;
+				permutation(depth+1, array, n, r, k);
+				visited[i] = false;
+				if(list.size() == k) {
+					return;
+				}
+			}
+		}
+		
+		
+	}
 	public static void main(String[] args) {
 		int n = 3;
-        int[] arr = {1, 2, 3};
-        int k = 5;
-        count =1;
-        answer = new int[n];
-        int[] output = new int[n];
-        boolean[] visited = new boolean[n];
-
-        perm(arr, output, visited, 0, n, n, k);
-        for(int a : answer) {
-        	System.out.println(a);
-        }
-        
+		int k = 5;
+		visited = new boolean[n+1];
+		int[] array = new int[n];
+		list = new ArrayList<>();
+		permutation(0, array, n, n, k);
+		for(int[] l : list) {
+			System.out.println(Arrays.toString(l));
+		}
+		
 	}
 }
