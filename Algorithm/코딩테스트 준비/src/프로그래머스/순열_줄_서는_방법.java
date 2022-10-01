@@ -20,9 +20,7 @@ public class 순열_줄_서는_방법 {
 					return;
 				}
 			}
-		}
-		
-		
+		}	
 	}
 	public static void main(String[] args) {
 		int n = 3;
@@ -31,9 +29,9 @@ public class 순열_줄_서는_방법 {
 		int[] array = new int[n];
 		list = new ArrayList<>();
 		permutation(0, array, n, n, k);
-		for(int[] l : list) {
-			System.out.println(Arrays.toString(l));
-		}
+		return 
+			
+		
 		
 	}
 }
