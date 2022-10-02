@@ -29,7 +29,6 @@ public class 순열_줄_서는_방법 {
 		int[] array = new int[n];
 		list = new ArrayList<>();
 		permutation(0, array, n, n, k);
-		return 
 			
 		
 		
