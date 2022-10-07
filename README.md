@@ -13,6 +13,8 @@
   
 ### JAVA
   - OOP
+  - JVM
+  - static
   
 ### DDD
   - 도메인 모델링
