@@ -20,6 +20,7 @@
   - OOP
   - JVM
   - static
+  - BigDecimal
 <br>
 
 ### DDD
