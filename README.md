@@ -19,7 +19,7 @@
 ### JAVA
   - OOP
   - JVM
-  - 
+  - 클린코드
   - static
   - BigDecimal
 <br>
