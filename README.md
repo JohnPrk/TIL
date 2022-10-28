@@ -52,7 +52,7 @@
   - 프로세스, 스레드 
 <br>
 
-### 인프라
+### AWS
 <details>
   <summary> [인프라 공방 7기] 👨🏻‍💻 그럴듯한 인프라 만들기 - 1주차 </summary>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[좌충우돌 삽질 여행기 1주차 챌린지] : https://resumejohnpark.notion.site/1-8d2cde479c4d4636ac6cb2b65805fc0e
