@@ -1,4 +1,4 @@
-# 📂 Check List That I Will Learn
+# 📂 List That I Will Learn
 
 매일 배운 것을 정리하고 앞으로 배울 것을 기록합니다.
 
