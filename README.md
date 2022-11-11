@@ -23,6 +23,7 @@
   - 클린코드
   - static
   - BigDecimal
+  - Enum
 <br>
 
 ### DDD
