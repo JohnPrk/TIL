@@ -33,6 +33,7 @@
 ### TDD
   - Junit
   - E2E Test
+  - RestAssured Test
   - MockMVC Test
   - Fake Test
 <br>
