@@ -19,6 +19,7 @@
 
 ### JAVA
   - OOP
+    - SOLID
   - JVM
   - 클린코드
   - static
