@@ -25,6 +25,7 @@
   - static
   - BigDecimal
   - Enum
+  - 상속
 <br>
 
 ### DDD
