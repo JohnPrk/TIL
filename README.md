@@ -56,7 +56,9 @@
 <br>
 
 ### 운영체제
-  - 프로세스, 스레드 
+  - 프로세스, 스레드
+  - Sync, Async
+  - Blocking, Non-Blocking
 <br>
 
 ### 함수형 프로그래밍
