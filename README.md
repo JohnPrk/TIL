@@ -25,6 +25,7 @@
   - static
   - BigDecimal
   - Enum
+  - interface
   - 상속
   - abstract
   - Optionial
