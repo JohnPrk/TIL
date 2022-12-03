@@ -20,6 +20,7 @@
 ### JAVA
   - OOP
     - SOLID
+      - SRP
   - JVM
   - 클린코드
   - static
