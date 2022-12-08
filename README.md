@@ -32,6 +32,7 @@
   - Optionial
   - CompletableFuture
   - 정규표현식
+  - 예외 처리
 <br>
 
 ### DDD
