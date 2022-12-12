@@ -18,6 +18,7 @@
 <br>
 
 ### JAVA
+  - 의존성 관리
   - OOP
     - SOLID
       - SRP
