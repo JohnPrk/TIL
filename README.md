@@ -22,6 +22,10 @@
   - OOP
     - SOLID
       - SRP
+      - OCP
+      - LSP
+      - ISP
+      - DIP
   - JVM
   - 클린코드
   - static
