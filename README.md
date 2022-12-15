@@ -58,6 +58,14 @@
   - Security
 <br>
 
+### JPA
+  - @Entity
+  - @GeneratedValue
+  - HttpEntity
+  - @MappedSuperclass
+
+<br>
+
 ### Json
   - Jackson
   - 직렬화, 역직렬화
