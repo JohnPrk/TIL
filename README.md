@@ -63,6 +63,7 @@
   - @GeneratedValue
   - HttpEntity
   - @MappedSuperclass
+  - Model
 
 <br>
 
