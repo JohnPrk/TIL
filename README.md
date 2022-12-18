@@ -64,7 +64,6 @@
   - HttpEntity
   - @MappedSuperclass
   - Model
-
 <br>
 
 ### Json
