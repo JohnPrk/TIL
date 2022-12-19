@@ -100,6 +100,7 @@
 
 ### CI/CD
   - travis CI
+  - Github action
 <br>
 
 ### AWS
