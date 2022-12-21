@@ -104,6 +104,8 @@
 <br>
 
 ### AWS
+  - EC2
+  - RDS
   - Virtual Private Cloud
     - VPC
     - 서브넷
@@ -111,6 +113,5 @@
     - 인터넷 게이트웨이
     - 탄력적 IP
     - NAT 게이트웨이
-  - 보안
-    - 보안 그룹
+    - 보안그룹
       
