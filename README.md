@@ -106,8 +106,9 @@
 ### AWS
   - EC2
   - RDS
-  - Virtual Private Cloud
-    - VPC
+  - S3
+  - codeDeploy
+  - VPC
     - 서브넷
     - 라우팅 테이블
     - 인터넷 게이트웨이
