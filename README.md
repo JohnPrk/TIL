@@ -56,6 +56,7 @@
   - Bean
   - AOP
   - Security
+    - OAuth2
 <br>
 
 ### JPA
