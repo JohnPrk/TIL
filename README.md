@@ -20,14 +20,8 @@
 ### JAVA
   - 의존성 관리
   - OOP
-    - SOLID
-      - SRP
-      - OCP
-      - LSP
-      - ISP
-      - DIP
+    - SOLID(SRP, OCP, LSP, ISP, DIP)
   - JVM
-  - 클린코드
   - static
   - BigDecimal
   - Enum
