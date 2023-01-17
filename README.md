@@ -20,24 +20,25 @@
     - 누적합
 </details>
   
-<br>
-
-### JAVA
-  - 의존성 관리
-  - OOP
-    - SOLID(SRP, OCP, LSP, ISP, DIP)
-  - JVM
-  - static
-  - BigDecimal
-  - Enum
-  - interface
-  - 상속
-  - abstract
-  - Optionial
-  - CompletableFuture
-  - 정규표현식
-  - 예외 처리
-<br>
+<details markdown="1">
+  <summary> <h3> JAVA </h3></summary>
+  
+  <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+    - 의존성 관리
+    - OOP
+      - SOLID(SRP, OCP, LSP, ISP, DIP)
+    - JVM
+    - static
+    - BigDecimal
+    - Enum
+    - interface
+    - 상속
+    - abstract
+    - Optionial
+    - CompletableFuture
+    - 정규표현식
+    - 예외 처리
+</details>
 
 ### DDD
   - 도메인 모델링
