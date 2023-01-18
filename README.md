@@ -18,8 +18,7 @@
       - BFS
       - 다익스트라
     - 누적합
-</details>
-  
+</details>  
 <details markdown="1">
   <summary> <h3> JAVA </h3></summary>
   
@@ -40,9 +39,11 @@
     - 예외 처리
 </details>
 
-### DDD
-  - 도메인 모델링
-<br>
+<details markdown="1">
+  <summary> <h3> DDD </h3></summary>
+  <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+    - 도메인 모델링
+</details>
 
 ### TDD
   - Junit
