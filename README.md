@@ -44,15 +44,17 @@
   <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
     - 도메인 모델링
 </details>
-
-### TDD
-  - Junit
-  - E2E Test
-  - RestAssured Test
-  - MockMVC Test
-  - Fake Test
-<br>
-
+<details markdown="1">
+  <summary> <h3> TDD </h3></summary>
+  
+  <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+    - Junit
+    - E2E Test
+    - RestAssured Test
+    - MockMVC Test
+    - Fake Test
+</details>
+  
 ### Spring
   - Bean
   - AOP
