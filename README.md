@@ -69,13 +69,16 @@
     - OAuth2
 </details>
 
-### JPA
-  - @Entity
-  - @GeneratedValue
-  - HttpEntity
-  - @MappedSuperclass
-  - Model
-<br>
+<details markdown="1">
+  <summary> <h3> JPA </h3></summary>
+  
+  <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+    - @Entity
+    - @GeneratedValue
+    - HttpEntity
+    - @MappedSuperclass
+    - Model
+</details>
 
 ### Json
   - Jackson
