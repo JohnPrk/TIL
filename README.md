@@ -80,10 +80,13 @@
     - Model
 </details>
 
-### Json
-  - Jackson
-  - 직렬화, 역직렬화
-<br>
+<details markdown="1">
+  <summary> <h3> Json </h3></summary>
+  
+  <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+    - Jackson
+    - 직렬화, 역직렬화
+</details>
 
 ### 운영체제
   - 프로세스, 스레드
