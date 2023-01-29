@@ -88,13 +88,18 @@
     - 직렬화, 역직렬화
 </details>
 
-### 운영체제
-  - 프로세스, 스레드
-  - Sync, Async
-  - Blocking, Non-Blocking
-  - 인터럽트
-  - 시스템콜과 modebit
-<br>
+
+<details markdown="1">
+  <summary> <h3> 운영체제 </h3></summary>
+  
+  <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+
+    - 프로세스, 스레드 
+    - Sync, Async 
+    - Blocking, Non-Blocking
+    - 인터럽트
+    - 시스템콜과 modebit
+</details>
 
 ### 리눅스
   - 우분투 리눅스
