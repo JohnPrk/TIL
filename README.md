@@ -101,9 +101,12 @@
     - 시스템콜과 modebit
 </details>
 
-### 리눅스
-  - 우분투 리눅스
-<br>
+<details markdown="1">
+  <summary> <h3> 리눅스 </h3></summary>
+  
+  <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+    - 우분투 리눅스
+</details>
 
 ### 네트워크
   - DNS
