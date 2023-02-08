@@ -108,10 +108,13 @@
     - 우분투 리눅스
 </details>
 
-### 네트워크
-  - DNS
-  - OSI 7계층
-<br>
+<details markdown="1">
+  <summary> <h3> 네트워크 </h3></summary>
+  
+  <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+    - DNS
+    - OSI 7계층
+</details>
 
 ### 함수형 프로그래밍
   - 함수형 인터페이스
