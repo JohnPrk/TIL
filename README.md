@@ -124,10 +124,14 @@
     - 람다
 </details>
 
-### UML
-  - 클래스 다이어그램
-  - 시퀀스 다이어그램
-<br>
+<details markdown="1">
+  <summary> <h3> UML </h3></summary>
+  
+  <!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+
+    - 클래스 다이어그램
+    - 시퀀스 다이어그램
+</details>
 
 ### CI/CD
   - travis CI
