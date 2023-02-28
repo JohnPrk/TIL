@@ -1,7 +1,10 @@
-# 📂 List That I Learned
+# 📂 Today I Learned
 
+<br>
 
-매일 배운 것을 정리하고 기록합니다.
+<h1>🧑🏻‍🏫</h1>
+
+<br>
 
 ## ATDD - [ATDD, 클린 코드 with Spring 6기](https://edu.nextstep.camp/s/hAciHKm5)
 * [우아한ATDD](https://github.com/JohnPrk/TIL/tree/main/ATDD/%EC%9A%B0%EC%95%84%ED%95%9CATDD)
