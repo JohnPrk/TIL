@@ -1,4 +1,4 @@
-# 📂 List That I Will Learn
+# 📂 List That I Learned
 
 
 매일 배운 것을 정리하고 기록합니다.
@@ -9,3 +9,8 @@
 * [2차 수업요약](https://github.com/JohnPrk/TIL/tree/main/ATDD/2%EC%A3%BC%EC%B0%A8)
 * [Outside In TDD Circle](https://github.com/JohnPrk/TIL/tree/main/ATDD/Outside%20In%20TDD%20Circle)
 * [Inside Out TDD Circle](https://github.com/JohnPrk/TIL/tree/main/ATDD/Inside%20Out%20TDD%20Circle)
+
+<br>
+
+## 운영체제
+* [인터럽트](https://github.com/JohnPrk/TIL/tree/main/OS/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8)
