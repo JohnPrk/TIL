@@ -18,3 +18,9 @@
 
 ## 운영체제
 * [인터럽트](https://github.com/JohnPrk/TIL/tree/main/OS/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8)
+
+
+<br>
+
+## 컴퓨터 구조
+* [파이프라이닝](https://github.com/JohnPrk/TIL/tree/main/Computer%20Architecture/%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8B%9D)
