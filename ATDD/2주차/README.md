@@ -1,10 +1,13 @@
-- 1주차 미션 리뷰
+<br>
+
+- ### 1주차 미션 리뷰
     - step2 - `시나리오 형태의 요구사항`을 `E2E 테스트`로 기능 구현 해보기
     - step3 - 조금 더 복잡한 요구사항을 시나리오 형태로 만들어보기
     - 스프링 환경에서 테스트 구현이 익숙하지 않으신 분은 학습하는데 시간이 걸리셨을 것이다.
     - 스프링 환경에서 테스트 구현이 익숙하신 분은 ‘어떻게 인수 테스트를 만들지?’, ‘인수 조건을 어떻게 구성할지’ 중점을 맞춰서 개발을 했을 것이라 생각한다.
+<br>
 
-- Q&A
+- ### Q&A
     - 자바 대신 코틀린을 써도 되나요?
         - 마음 같아서는 사용해도 된다고 하고 싶으나 저를 포함한 많은 분들께서 리뷰를 해주시는거라 이 번 과정에서는 자바로 진행을 해주셨으면 좋겠다.
     - 인수 테스트를 회사에 도입을 하고 싶은데, 어떻게 하는게 좋을까요?
@@ -25,8 +28,9 @@
         - `API 테스트` 목적으로 MockMVC를 써서 `서비스 레이어(비즈니스 레이어)`부터는 `mocking`을 하는 경우를 많이 봤습니다.
     - 개발 스터디를 모을 때 어디서 모으시나요?
         - 왜 먼 곳에서 찾으시나요? 여기 넥스트 스텝 커뮤니티에도 많은 동료가 있습니다.
+<br>
     
-- 1주차 피드백
+- ### 1주차 피드백
     - 인수 테스트 격리하기
         - `@Transactional`해서 Rollback 하면 되지 않나?
             - `RANDOM_PORT`, `DEFINED_PORT`를 사용할 경우 `실제 서블릿 환경`이 제공됨(롤백이 적용되지 않음)
@@ -42,8 +46,8 @@
             - 테스트 컨테이너`(컨텍스트)`만 공유(재사용) 하고 테이블은 매번 `truncate` 시키는 방법
             - 프로그램의 복잡성이 올라가면서 테이블이 많아지게 되면 테이블명을 우리가 다 기억하지 못하기 때문에, SQL문을 짤 때 테이블 명을 전부 조회한 결과를 바탕으로 테이블을 truncate 하면 된다.
             - `JPA`의 `EntityManager`를 이용하거나 `DataSource`를 이용해서 테이블 이름을 조회 → 테이블 상태에 의존하지 않는 초기화 환경 구축 가능
-            
-           ![Untitled](https://user-images.githubusercontent.com/88137420/220135889-5dd4fd37-6ab7-4856-9e7d-a17327735552.png)
+           
+                <img src="https://user-images.githubusercontent.com/88137420/220135889-5dd4fd37-6ab7-4856-9e7d-a17327735552.png" width="700">
             
     - 인수 테스트 리팩토링
         - 테스트의 의도를 명확히 드러내기 → `추상화`
@@ -59,8 +63,9 @@
             - 컨벤션에 대한 고민들은 팀원들과 협의가 필요하다.
         - static 메서드만 있는 클래스를 분리
             - 자주 사용하지만 클래스 생성이 번거롭다면, 이 모두를 묶어서 static 메서드가 있는 클래스로 분리
+<br>
 
-- 미션 추가 설명 및 관련 질문
+- ###미션 추가 설명 및 관련 질문
     - 도메인 : 지하철 역 / 지하철 구간 / 지하철 노선
     - Q&A
         - TRUNCATE 격리할 때 테이블의 ID 컬럼명(STATION_ID, LINE_ID, …)을 다르게 설정할 경우 오류나지 않나요!?
@@ -71,8 +76,9 @@
                 - 2-2. dialect를 MySQL 사용 시 TRUNCATE 진행 시 별다른 명령문이 없어도 AUTO_INCREMENT가 재설정 됨(5.7, 8.0 동일)entityManager.createNativeQuery("TRUNCATE TABLE " + tableName).executeUpdate();
         - 외래키가 있을경우 Truncate시 에러가 발생하지 않나요?
             - `SET REFERNTIAL_INTEGRITY FALSE` 조건으로 일단은 문제 없이 프로젝트를 진행 했는데 한 번 확인 해봐야겠다.
+<br>
 
-- 2주차 미션 - ATDD + TDD
+- ### 2주차 미션 - ATDD + TDD
     - ‘인수 테스트 이후에 어떻게 하면 TDD를 수월하게 할 수 있을지?’에 대한 내용을 다루고 있다.
     - 단위 테스트
         - 단위 테스트의 개념이 모두 다를 것이다.
@@ -80,7 +86,7 @@
         - 공통된 생각`(암묵적 동의)` : 작은 코드 조각을 검증 / 빠르게 수행 가능 / `격리`된 방식으로 처리
         - 두 단위 테스트의 차이?
             
-            ![Untitled](https://user-images.githubusercontent.com/88137420/220136007-c04dd547-eb50-4eae-94a2-4964eb68f1c6.png)
+            <img src="https://user-images.githubusercontent.com/88137420/220136007-c04dd547-eb50-4eae-94a2-4964eb68f1c6.png" width="700">
             
             - 두 번째 테스트 - Station이 실패하면 Line이 실패할 수도 있다.
             - 협력 객체의 유무`(테스트하는 대상이 의존하고 있는(필요로 하는) 대상이 있느냐? 없느냐?)`
@@ -94,7 +100,8 @@
                 - 에이 그래도 실제 객체가 있는데 그걸 이용해서 테스트 해야지?
                 - 이를 `Sociable Tests(통합 단위 테스트)`라고 한다!
             
-            ![Untitled](https://user-images.githubusercontent.com/88137420/220136081-e481bad3-2733-4ec2-a326-3e56c3e871b5.png)
+                    <img src="https://user-images.githubusercontent.com/88137420/220136081-e481bad3-2733-4ec2-a326-3e56c3e871b5.png" width="700">
+
             
         - `테스트 더블`
             - **우아무개 曰**
@@ -103,7 +110,8 @@
                 - `고립된 협력 객체`를 만들기 위한 방식이 많은데 그 중에 하나가 `Test Double`이다.
                 - `가짜 객체(고립된 협력 객체)`를 만드는 방법이 많은데, 하단을 참조하면 된다.
             
-            ![Untitled](https://user-images.githubusercontent.com/88137420/220136254-1adb9968-42cc-4b54-a0d0-97b69553cde7.png)
+                    <img src="https://user-images.githubusercontent.com/88137420/220136254-1adb9968-42cc-4b54-a0d0-97b69553cde7.png" width="700">
+
             
             - `Stub`  : 협력 객체를 직접 만들 때, 협력 객체의 메서드에 대한 호출 값을 미리 지정하는 방법
                 - 이 때, 사용 `Mockito`를 사용할 수 있다.
@@ -112,8 +120,8 @@
                 - 협력 객체가 잘 동작하던지 안하던지 상관하지 않고 테스트하고자 하는 대상이 잘 동작하는지만 확인하는 것이다.
             - `Fake`  : 가짜 객체를 직접 새로 생성하는 방법이다.
                 - stub방식은 ‘Mockito’와 같은 라이브러리를 이용해서 가짜 객체를 만들어서 테스트를 사용하는 것이지만, fake방식은 가짜 객체가 아닌 테스트를 위한 다른 객체를 직접 만들어서 사용하는 것이다.
-                
-                ![Untitled](https://user-images.githubusercontent.com/88137420/220136332-a56cf714-06a1-477c-ac4b-6da8cc753706.png)
+                    <img src="https://user-images.githubusercontent.com/88137420/220136332-a56cf714-06a1-477c-ac4b-6da8cc753706.png" width="700">
+
                 
                 - DAO의 메서드가 호출이 되면 DB의 값을 조회해서 요청한 응답 값을 전해주는데, Fake방식은 FakeDAO 객체를 주입을 해서 DB와 비슷하게 `HashMap`에 있는 값을 응답하게끔 한다.
             - Mock
@@ -125,7 +133,8 @@
                 - stub보다 mock이 더 테스트를 자세하게 해준다고 알면 될까요? → No
                     - 검증하는 방식이 다른 것이다.
                     
-                    ![Untitled](https://user-images.githubusercontent.com/88137420/220136423-9462b5c6-685a-4cf1-a951-5aae21438154.png)
+                        <img src="https://user-images.githubusercontent.com/88137420/220136423-9462b5c6-685a-4cf1-a951-5aae21438154.png" width="700">
+
                     
                     - 예를 들어서 위의 SecurityCentral(파란색)이 Window객체와 Door객체를 의존하고 있는데, 이 때 Window와 Door를 목 객체로 주입 받아 생성을 하게 된다면 Window객체의 close 메서드와 Door객체의 close 메서드가 얼마나 호출 되었는지 확인할 수 있다.
                     - stub은 호출되는 메서드를 지정해줘야 하는데 mock은 그럴 필요가 없다!
@@ -147,11 +156,13 @@
         - 가짜 객체 vs 실제 객체
             - 가짜 객체(테스트 더블)의 장, 단점
                 
-                ![Untitled](https://user-images.githubusercontent.com/88137420/220136517-0856ee29-3ddb-4ed5-834a-a2aab22a1e12.png)
+                <img src="https://user-images.githubusercontent.com/88137420/220136517-0856ee29-3ddb-4ed5-834a-a2aab22a1e12.png" width="700">
+
                 
             - 실제 객체의 장, 단점
                 
-                ![Untitled](https://user-images.githubusercontent.com/88137420/220136564-a931025c-2f84-4f97-95bf-8e1e728aed8a.png)
+                <img src="https://user-images.githubusercontent.com/88137420/220136564-a931025c-2f84-4f97-95bf-8e1e728aed8a.png" width="700">
+
                 
             - `가짜 객체`를 활용하면 `실제 객체`를 사용할 때보다 조금 `더 편하게` 테스트를 작성할 수 있다.
             - 하지만 상세 구현에 의존하는 테스트가 될 수 있다.
@@ -159,13 +170,16 @@
             
         - 잠깐!? 단위 테스트 ? 통합 테스트 ?
             
-            ![Untitled](https://user-images.githubusercontent.com/88137420/220136645-98dbc695-29dd-4434-821d-9e162d232ce2.png)
+            <img src="https://user-images.githubusercontent.com/88137420/220136645-98dbc695-29dd-4434-821d-9e162d232ce2.png" width="700">
+
             
-            ![Untitled](https://user-images.githubusercontent.com/88137420/220136696-21e06428-8386-4fa0-a513-6c9ad5d21453.png)   
+            <img src="https://user-images.githubusercontent.com/88137420/220136696-21e06428-8386-4fa0-a513-6c9ad5d21453.png" width="700">
+   
             
         - Classist vs Mockist
             
-            ![Untitled](https://user-images.githubusercontent.com/88137420/220136795-8f6c2c5d-eda5-4c92-96c8-85712389937f.png)
+            <img src="https://user-images.githubusercontent.com/88137420/220136795-8f6c2c5d-eda5-4c92-96c8-85712389937f.png" width="700">
+
             
             - Mockist : 테스트 대상을 위해서 협력 객체마저도 격리가 필요하다. 즉, 테스트 대상이 의존 하는 대상(협력 객체)를 가짜 객체(테스트 더블)로 만들어야한다.
             - Classist : 굳이 그럴 필요까지 있냐? 테스트를 격리해야하는 대상은 코드가 아니라 또 다른 테스트다. 즉, 테스트 간 공유하는 의존성이 아니라면 실제 객체를 사용해도 된다.
@@ -173,7 +187,8 @@
     - TDD
         - TDD Approach(`Outside In` vs `Inside Out`)
             
-            ![Untitled](https://user-images.githubusercontent.com/88137420/220136850-6d2e6793-6e60-4f30-beda-981416bf6e09.png)
+            <img src="https://user-images.githubusercontent.com/88137420/220136850-6d2e6793-6e60-4f30-beda-981416bf6e09.png" width="700">
+
             
             - Outside In
                 - 상위 레벨 테스트부터 시작 (컨트롤러 → 서비스 → 도메인)
@@ -193,7 +208,8 @@
             - 둘 중에 하나를 선택 해야하는 문제는 아니다.
         - 무엇을 기준으로 TDD를 해야할까?
             
-            ![Untitled](https://user-images.githubusercontent.com/88137420/220136916-2d843246-07cf-4b1c-8b56-3c3c65c435b0.png)
+            <img src="https://user-images.githubusercontent.com/88137420/220136916-2d843246-07cf-4b1c-8b56-3c3c65c435b0.png" width="700">
+
             
             - 추천 방법
                 - BDD나 ATDD에서는 Outside In 방식으로 하는 것을 많이들 추천한다.
@@ -203,9 +219,11 @@
                 - 이 때, 내부 구현에 대한 설계의 흐름을 구상한다.
                 - 설계가 끝이 나면 도메인부터 차근차근 TDD로 기능을 구현한다.
                 - 만약, 도메인이 복잡하거나 설계가 어려울 경우에는 이해하고 있는 부분부터 차근차근 기능을 구현하면 된다.
+<br>
 
-- 2주차 미션 소개
+- ### 2주차 미션 소개
     - 실습 : 구간 단위 테스트, 구간 서비스 단위 테스트, 구간 서비스 테스트(+ Mock) + 리팩토링(비지니스 로직을 도메인의 영역으로 옮기기)
     - 1주차 : 지하철 구간 삽입 개선(처음, 중간, 끝에 들어갈 수 있음 + 예외 케이스)
     - 2주차 : 지하철 구간 삭제 개선
     - 3주차 : 조금 어려울 수 있음 / 최단 경로를 조회하는 기능(외부의 다익스트라 라이브러리를 이용) / Outside In + Inside Out을 적절히 사용하기
+<br>
