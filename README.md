@@ -24,3 +24,9 @@
 
 ## 컴퓨터 구조
 * [파이프라이닝](https://github.com/JohnPrk/TIL/tree/main/Computer%20Architecture/%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8B%9D)
+
+<br>
+
+## Web
+* [REST API란?](https://github.com/JohnPrk/TIL/blob/main/Web/REST%20API%EB%9E%80%3F.md)
+
