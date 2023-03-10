@@ -30,3 +30,12 @@
 ## Web
 * [REST API란?](https://github.com/JohnPrk/TIL/blob/main/Web/REST%20API%EB%9E%80%3F.md)
 
+
+<br>
+
+## Spring
+* [DTO vs VO vs Entity](https://github.com/JohnPrk/TIL/blob/main/Spring/Entity%20vs%20DTO%20vs%20VO/README.md)
+
+
+
+<br>
