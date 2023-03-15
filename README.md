@@ -20,7 +20,9 @@
 <br>
 
 ## 운영체제
+* [CPU 스케쥴링](https://github.com/JohnPrk/TIL/tree/main/OS/CPU%20%EC%8A%A4%EC%BC%80%EC%A5%B4%EB%A7%81)
 * [인터럽트](https://github.com/JohnPrk/TIL/tree/main/OS/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8)
+
 
 
 <br>
