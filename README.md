@@ -33,9 +33,13 @@
 
 <br>
 
+## 데이터베이스
+* [트랜잭션](https://github.com/JohnPrk/TIL/tree/main/DB/Transcation)
+<br>
+
+
 ## Web
 * [REST API란?](https://github.com/JohnPrk/TIL/blob/main/Web/REST%20API%EB%9E%80%3F.md)
-
 
 <br>
 
@@ -49,11 +53,10 @@
 
 ## ETC
 * [DTO vs VO vs Entity](https://github.com/JohnPrk/TIL/blob/main/Spring/Entity%20vs%20DTO%20vs%20VO/README.md)
+<br>
 
-
+## 자료구조
+* [ArrayList vs LinkedList](https://github.com/JohnPrk/TIL/tree/main/Data%20Structure/ArrayList%20vs%20LinkedList)
 
 <br>
 
-## 데이터베이스
-* [트랜잭션](https://github.com/JohnPrk/TIL/tree/main/DB/Transcation)
-<br>
