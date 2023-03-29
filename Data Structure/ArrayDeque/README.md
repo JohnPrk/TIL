@@ -72,3 +72,10 @@
     - 여기에서 기본 용량을 넘으면 자신의 용량의 2배인 배열을 만들고 이동하는 작업을 하게 됩니다.
 
 <br>
+
+*<참고 자료>*
+
+- [Thread Safe LIFO Data Structure Implementations](https://www.baeldung.com/java-lifo-thread-safe)
+- [ArrayDeque란?](https://github.com/wjdrbs96/Today-I-Learn/blob/master/Java/Collection/Queue/ArrayDeque%EB%9E%80%3F.md)
+
+<br>
