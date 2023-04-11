@@ -30,6 +30,7 @@
 <br>
 
 ## 컴퓨터 구조
+* [메모리 계층구조](https://github.com/JohnPrk/TIL/tree/main/Computer%20Architecture/%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B3%84%EC%B8%B5%EA%B5%AC%EC%A1%B0)
 * [파이프라이닝](https://github.com/JohnPrk/TIL/tree/main/Computer%20Architecture/%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EB%8B%9D)
 
 <br>
