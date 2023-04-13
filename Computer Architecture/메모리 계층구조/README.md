@@ -56,3 +56,11 @@
 - 정리해보자면, 이러한 시간적, 공간적 지역성 매커니즘을 통해서 자주 사용하는 명령어 및 데이터를  메인 메모리가 아니라 캐시 메모리에서 저장하고 빠르게 사용 한다는 것을 의미합니다.
 
 <br />
+<br />
+
+*<참고자료>*
+
+- [L1, L2 및 L3 캐시의 차이점: CPU 캐시는 어떻게 작동합니까?](https://quasarzone.com/bbs/qn_hardware/views/818208)
+- COMPUTER ORGANIZATION AND DESIGN(MIPS Edition)-Chapter5 메모리 계층구조
+
+<br />
