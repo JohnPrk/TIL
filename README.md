@@ -22,6 +22,7 @@
 ## 운영체제
 * [CPU 스케쥴링](https://github.com/JohnPrk/TIL/tree/main/OS/CPU%20%EC%8A%A4%EC%BC%80%EC%A5%B4%EB%A7%81)
 * [인터럽트](https://github.com/JohnPrk/TIL/tree/main/OS/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8)
+* [가상 메모리](https://github.com/JohnPrk/TIL/blob/main/OS/%EA%B0%80%EC%83%81%20%EB%A9%94%EB%AA%A8%EB%A6%AC/README.md)
 * [가상 머신](https://github.com/JohnPrk/TIL/tree/main/OS/%EA%B0%80%EC%83%81%20%EB%A8%B8%EC%8B%A0)
 * [동기화 도구들](https://github.com/JohnPrk/TIL/tree/main/OS/%EB%8F%99%EA%B8%B0%ED%99%94%20%EB%8F%84%EA%B5%AC%EB%93%A4)
 
