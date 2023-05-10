@@ -47,6 +47,7 @@
 ## Web
 * [REST API란?](https://github.com/JohnPrk/TIL/blob/main/Web/REST%20API%EB%9E%80%3F.md)
 * [쿠키 vs 캐시 및 자바 애플리케이션에서 세션 동작과정](https://github.com/JohnPrk/TIL/tree/main/Web/%EC%BF%A0%ED%82%A4%20vs%20%EC%84%B8%EC%85%98)
+* [CORS](https://github.com/JohnPrk/TIL/tree/main/Web/CORS)
 
 <br>
 
