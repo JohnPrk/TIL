@@ -26,8 +26,6 @@
 * [가상 머신](https://github.com/JohnPrk/TIL/tree/main/OS/%EA%B0%80%EC%83%81%20%EB%A8%B8%EC%8B%A0)
 * [동기화 도구들](https://github.com/JohnPrk/TIL/tree/main/OS/%EB%8F%99%EA%B8%B0%ED%99%94%20%EB%8F%84%EA%B5%AC%EB%93%A4)
 
-
-
 <br>
 
 ## 컴퓨터 구조
@@ -43,6 +41,10 @@
 * [인덱스](https://github.com/JohnPrk/TIL/tree/main/DB/%EC%9D%B8%EB%8D%B1%EC%8A%A4)
 <br>
 
+## 자바
+* [어노테이션](https://github.com/JohnPrk/TIL/tree/main/JAVA/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98)
+
+<br>
 
 ## Web
 * [REST API란?](https://github.com/JohnPrk/TIL/blob/main/Web/REST%20API%EB%9E%80%3F.md)
