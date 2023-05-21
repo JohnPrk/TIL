@@ -47,7 +47,7 @@
 <br>
 
 ## 스프링
-* [디스패처 ](https://github.com/JohnPrk/TIL/tree/main/Spring/%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B2%98%20%EC%84%9C%EB%B8%94%EB%A6%BF)
+* [디스패처 서블릿](https://github.com/JohnPrk/TIL/tree/main/Spring/%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B2%98%20%EC%84%9C%EB%B8%94%EB%A6%BF)
 
 <br>
 
