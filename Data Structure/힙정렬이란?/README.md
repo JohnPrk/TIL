@@ -13,7 +13,7 @@
     - (a)는 이진 트리 형태를 가지며, 맨 아랫층을 제외하고는 완전히 채워 있고, 맨 아랫층은 왼쪽부터 채워져 있고, 부모 노드의 값은 왼쪽, 오른쪽 자식 노드의 값보다 작기 때문에 이진 힙 데이터 구조(최소 힙)라고 할 수 있습니다.
     - (b)는 다른 모든 부분은 만족하지만, 부모 노드의 값 중 하나(8)가 왼쪽 자식 노드의 값(6)이 크기 때문에 힙 데이터 구조라고 할 수 없습니다.
     - (c)는 다른 모든 부분은 만족하지만, 맨 아랫층이 왼쪽부터 채워져 있지 않기 때문에 힙 데이터 구조라고 할 수 없습니다.
-      <img width="1000" alt="image" src="https://github.com/JohnPrk/TIL/assets/88137420/4a897b1f-b2cf-4c68-95b4-b927afe8b1c8">
+      <img width="700" alt="image" src="https://github.com/JohnPrk/TIL/assets/88137420/4a897b1f-b2cf-4c68-95b4-b927afe8b1c8">
 
     
 - Heap-Sort는 다음과 같은 3가지 순서로 진행 됩니다.
@@ -28,20 +28,20 @@
     1-2. 이 때, 자식 노드와 부모 노드의 값이 바꼈다면, 자식 노드의 자식이 있는지 확인하고 존재한다면 위의 작업을 재귀적으로 수행합니다. 
     
     1-3. 아래는 이진 힙 데이터 구조가 아닌 배열에서 Heapify 작업을 수행하는 과정을 표현한 이미지입니다.
-      <img width="1000" alt="image1" src="https://github.com/JohnPrk/TIL/assets/88137420/1446b78b-a8d5-49b3-b90d-ab037c680645">
+      <img width="700" alt="image1" src="https://github.com/JohnPrk/TIL/assets/88137420/1446b78b-a8d5-49b3-b90d-ab037c680645">
 
     
-    1-4. 이진 힙 데이터 구조가 아닌 배열에서 Heapify 작업은 필수적으로 맨 아랫층의 부모 노드부터 루트 노트까지 Heapfiy 작업을 수행해야 하며, 노드가 n개라고 가정 한다면 Heapify 작업의 횟수는$⎣n/2⎦$번이 되며 다음과 같이 그림으로 간단히 알 수 있습니다.
-        <img width="1000" alt="image2" src="https://github.com/JohnPrk/TIL/assets/88137420/01774a2e-b459-4f54-b6e7-611f5a0bdfb4">
+    1-4. 이진 힙 데이터 구조가 아닌 배열에서 Heapify 작업은 필수적으로 맨 아랫층의 부모 노드부터 루트 노트까지 Heapfiy 작업을 수행해야 하며, 노드가 n개라고 가정 한다면 Heapify 작업의 횟수는⎣n/2⎦번이 되며 다음과 같이 그림으로 간단히 알 수 있습니다.
+        <img width="700" alt="image2" src="https://github.com/JohnPrk/TIL/assets/88137420/01774a2e-b459-4f54-b6e7-611f5a0bdfb4">
 
     
     1-5. 이렇게 선택된 노드는 자식의 노드의 값과 비교(상수 시간)를 하고, 자식의 자식이 있다면 자식의 노드에서 비교 작업이 재귀적으로 수행이 된다고 할 수 있습니다.
     
-    1-6. 따라서 자식의 자식으로 내려가는 작업은 트리의 높이만큼 비례 하므로 최악의 경우인 루트 노드의 경우는 시간 복잡도는 $log(n)$이고 그 외의 경우는 `상수 시간`(왼쪽 or 왼쪽, 오른쪽 노드만 있는 경우) < x  < `log(n)`의 시간 복잡도라고 할 수 있습니다.
+    1-6. 따라서 자식의 자식으로 내려가는 작업은 트리의 높이만큼 비례 하므로 최악의 경우인 루트 노드의 경우는 시간 복잡도는 log(n)이고 그 외의 경우는 `상수 시간`(왼쪽 or 왼쪽, 오른쪽 노드만 있는 경우) < x  < `log(n)`의 시간 복잡도라고 할 수 있습니다.
     
-    1-7. 즉, Heapify 작업을 수행 해야하는 횟수[ ⇒ $⎣n/2⎦$ ]와 자식의 노드와 재귀적으로 비교하는 작업[ ⇒ $< log(n)$ ]의 곱 연산의 시간 복잡도를 가진다고 할 수 있습니다.
+    1-7. 즉, Heapify 작업을 수행 해야하는 횟수[ ⇒ ⎣n/2⎦ ]와 자식의 노드와 재귀적으로 비교하는 작업[ ⇒ < log(n) ]의 곱 연산의 시간 복잡도를 가진다고 할 수 있습니다.
     
-    1-8. 이를 수학적으로 계산하기는 매우 어려우므로 쉽게 자식의 노드와 재귀적으로 비교하는 작업을 모두가 $log(n)$이라고 가정하면 $⎣n/2⎦ * log(n)$, 즉 $O(nlog(n))$보다 작다고 할 수 있습니다.
+    1-8. 이를 수학적으로 계산하기는 매우 어려우므로 쉽게 자식의 노드와 재귀적으로 비교하는 작업을 모두가 log(n)이라고 가정하면 ⎣n/2⎦ * log(n), 즉 O(nlog(n))보다 작다고 할 수 있습니다.
     
     2-1. 위의 작업이 끝이 나면 최소 힙의 경우 루트 노드에 가장 작은 값이 위치 되어지고, 최고 힙의 경우 루트 노드에 가장 큰 값이 위치 되어집니다.
     
@@ -55,11 +55,11 @@
     public static void heapsort(int[] array) {
         // 1-4번 설명
     		for(int i = array.length/ 2 -1; i >= 0; i--) {
-          minHeapify(array, i, array.length);
+          maxHeapify(array, i, array.length);
         }
     }
     	
-    public static void minHeapify(int[] array, int index, int size) {
+    public static void maxHeapify(int[] array, int index, int size) {
         int parent = index;
         int leftChild = 2 * index + 1;
         int rightChild = 2 * index + 2;
@@ -76,7 +76,7 @@
           int temp = array[index];
           array[index] = array[parent];
           array[parent] = temp;
-          minHeapify(array, parent, size);
+          maxHeapify(array, parent, size);
         }
       }
     ```
@@ -87,7 +87,7 @@
     
     3-3. 이 과정을 n-1번 수행하게 되면 배열은 정렬된 상태를 가지게 됩니다.
     
-    3-4. 위 작업의 시간 복잡도는   $(n-1) * log(n)$, 즉 $O(nlog(n))$이라고 할 수 있습니다.
+    3-4. 위 작업의 시간 복잡도는   (n-1) * log(n), 즉 O(nlog(n))이라고 할 수 있습니다.
     
     3-5. 위의 작업을 수행하는 자바 코드는 다음과 같습니다.
     
@@ -103,11 +103,11 @@
     		int maximum = array[0];
         array[0] = array[index];
         array[index] = maximum;
-        minHeapify(array, 0, index);
+        maxHeapify(array, 0, index);
       }
     ```
     
-- 즉, 1-3번 작업의 수행 결과 $O(nlog(n)) + 1 + O(nlog(n))$보다 작은 값이 나오게 되는데, 사실 시간복잡도에서 앞의 상수는 작업에 크게 영향을 주지 않기 때문에, Heap-Sort의 시간복잡도는 $O(log(n)$이라고 할 수 있습니다.
+- 즉, 1-3번 작업의 수행 결과 O(nlog(n)) + 1 + O(nlog(n))보다 작은 값이 나오게 되는데, 사실 시간복잡도에서 앞의 상수는 작업에 크게 영향을 주지 않기 때문에, Heap-Sort의 시간복잡도는 O(log(n)이라고 할 수 있습니다.
 - 이러한 Heap-Sort는 백준의 [수 정렬하기 2](https://www.acmicpc.net/problem/2751) 문제를 통해서 확인할 수 있고, 전체 코드는 다음과 같습니다.
     
     ```java
@@ -116,7 +116,7 @@
     
     class Main {
     
-      public static void removeFirst(int[] array, int index){
+      public static void moveRootNodeToEndOfArray(int[] array, int index){
         int minimum = array[0];
         array[0] = array[index];
         array[index] = minimum;
@@ -144,10 +144,10 @@
       
       public static void heapsort(int[] array) {
         for(int i = array.length/ 2 -1; i >= 0; i--) {
-          heapify(array, i, array.length);
+          maxHeapify(array, i, array.length);
         }
         for(int i = array.length -1; i > 0; i--) {
-          removeFirst(array, i);
+          moveRootNodeToEndOfArray(array, i);
         }
       }
       public static void main(String[] args) throws IOException {
@@ -169,7 +169,7 @@
     }
     ```
     
-- Heap-Sort뿐만 아니라, $O(nlog(n))$의 시간복잡도를 가진 정렬(Merge-Sort, Quick-Sort)들도 함께 테스트 한다고 시도했던 흔적들이 제 TMI입니다. >.<
+- Heap-Sort뿐만 아니라, O(nlog(n))의 시간복잡도를 가진 정렬(Merge-Sort, Quick-Sort)들도 함께 테스트 한다고 시도했던 흔적들이 제 TMI입니다. >.<
     <img width="1000" alt="image3" src="https://github.com/JohnPrk/TIL/assets/88137420/4cbf3b48-093f-4057-9f4f-ad3ee2463bd5">
 
     
