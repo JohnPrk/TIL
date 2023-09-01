@@ -78,6 +78,7 @@
 ## 자료구조
 * [ArrayList vs LinkedList](https://github.com/JohnPrk/TIL/tree/main/Data%20Structure/ArrayList%20vs%20LinkedList)
 * [ArrayDeque](https://github.com/JohnPrk/TIL/blob/main/Data%20Structure/ArrayDeque/README.md)
+* [힙정렬이란?](https://github.com/JohnPrk/TIL/tree/main/Data%20Structure/%ED%9E%99%EC%A0%95%EB%A0%AC%EC%9D%B4%EB%9E%80%3F)
 
 <br>
 
